@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+.Slogans {
+  display: flex;
+  padding: 0 160px;
+}
+.Slogans .Slogan {
+  width: 60%;
+  font-family: "Poppins", sans-serif;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 76px; /* 105.556% */
+  letter-spacing: -2px;
+}
+.Slogans .Slogan__other {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+}
+
+.Category {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 120px 160px;
+}
+.CategoryItem {
+  position: relative;
+}
+.CategoryItem.big {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.CategoryItem.small img {
+  width: 50%;
+  right: 0;
+  transform: translate(100%, 0);
+}
+.CategoryItem.small .content {
+  top: 50%;
+  bottom: 40px;
+}
+.CategoryItem .content {
+  position: absolute;
+  left: 32px;
+  top: 40px;
+}
+.CategoryItem .content .category_title {
+  color: #141718;
+  font-family: Poppins;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.Slide .slideHeading {
+  display: flex;
+  padding: 20px 160px;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.Banner {
+  display: flex;
+  padding: 0 160px;
+}
+.Banner__image {
+  flex: 1;
+}
+.Banner__content {
+  flex: 1;
+  padding-left: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+.Slogans{
+    display: flex;
+    padding: 0 160px;
+    .Slogan{
+        width: 60%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 76px; /* 105.556% */
+        letter-spacing: -2px;
+        &__other{
+            display: flex;
+            align-items: center;
+            padding: 24px;
+        }
+    }
+}
+.Category{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 120px 160px;
+    &Item
+    {
+        position: relative;
+        &.big{
+        grid-row-start: 1;
+        grid-row-end: 3;
+        
+        }
+        &.small{
+            // position: relative;
+            img{
+                // position: absolute;
+                width: 50%;
+                right: 0;
+                transform: translate(100%,0);
+            }
+            .content{
+                top: 50%;
+                bottom: 40px;
+            }
+        }
+        .content{
+            position: absolute;
+            left: 32px;
+            top: 40px;
+
+            .category_title{
+                color : #141718;
+                font-family: Poppins;
+                font-size: 34px;
+                font-style: normal;
+                font-weight: 500;
+            }
+        }
+    }
+}
+.Slide{
+    .slideHeading{
+        display: flex;
+        padding: 20px 160px;
+        justify-content: space-between;
+        margin-bottom: 28px;
+    }
+}
+.Banner{
+    display: flex;
+    padding: 0 160px;
+    &__image{
+        flex: 1;
+    }
+    &__content{
+        flex: 1;
+        padding-left: 72px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+}

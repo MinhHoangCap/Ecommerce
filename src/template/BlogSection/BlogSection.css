@@ -1,0 +1,8 @@
+.Blog_Section {
+  padding: 0 160px;
+}
+
+.Blog_heading {
+  display: flex;
+  justify-content: space-between;
+}

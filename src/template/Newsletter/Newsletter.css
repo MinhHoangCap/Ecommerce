@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@600&display=swap");
+.Newsletter {
+  position: relative;
+  height: 360px;
+}
+.Newsletter__heading {
+  font-family: Poppins, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px; /* 110% */
+  letter-spacing: -0.4px;
+}
+.Newsletter__caption {
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.Newsletter__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+}
+.Newsletter__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+.Newsletter .Newsletter__form_input {
+  display: flex;
+  gap: 8px;
+  box-shadow: 0 1px 3px lightgrey;
+}
+.Newsletter .Newsletter__form_input .input {
+  display: flex;
+}
+.Newsletter .Newsletter__form_input .input input {
+  border: none;
+}
+.Newsletter .Newsletter__form_input .input input:focus-visible {
+  border: none;
+}

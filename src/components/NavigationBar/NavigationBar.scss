@@ -1,0 +1,48 @@
+
+.NavigationBar{
+    padding: 16px 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Logo{
+    width: 60px;
+}
+.Navigation{
+    &List{
+    display: flex;
+    list-style: none;
+    }
+    &Item{
+        padding: 0 20px;
+        a{
+            text-decoration: none;
+            color: #6C7275;
+        }
+    }
+}
+.Icons{
+    display: flex;
+    gap: 16px;
+}
+.Cart{
+    display: flex;
+    gap: 5px;
+    .CartCount{
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        // padding: 5px;
+        border-radius: 50%;
+        background-color: black;
+        color: white;
+        font-size: 12px;
+    }
+}
+@media all and (max-width: 940px){
+    .NavigationList{
+        display: none;
+    }
+}
