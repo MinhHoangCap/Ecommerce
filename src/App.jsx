@@ -16,7 +16,8 @@ export default function App() {
   const [logo,setLogo] = useState("")
   
   const [webConfig,setWebConfig] = useState({
-    logo : ""
+    logo : "",
+    img_form: "",
   }
   )
   useEffect(()=>{
@@ -24,7 +25,8 @@ export default function App() {
     const webConfigApi = await axios.get("http://localhost/ecommerce/wp-json/acf/v3/options/options");
     console.log(webConfigApi.data.acf.logo);
     setWebConfig({
-      logo : webConfigApi.data.acf.logo
+      logo : webConfigApi.data.acf.logo,
+      img_form: webConfigApi.data.acf.form_login_register_image,
       }
     )
   }
@@ -34,7 +36,7 @@ export default function App() {
   
   return (
     <>
-        <Header logo={webConfig.logo}/>
+        <Header logo={webConfig.logo} img_form={webConfig.img_form}/>
         {/* <Home /> */}
         <BrowserRouter>
           <Routes>
@@ -47,25 +49,3 @@ export default function App() {
       </>
   )
 }
-
-// export default class App extends Component {
-  
-//   async componentDidMount(){
-//       const  acfOptions = await axios.get("http://localhost/ecommerce/wp-json/acf/v3/options/options");
-//       console.log(acfOptions.data);
-//       this.setState({
-//           logo: acfOptions.data.acf.logo,
-//           slogan: acfOptions.data.acf.slogan
-//         })
-//   }
-//   render() {
-//     console.log(this.state.logo);
-//     return (
-//       <>
-//         <Header logo={this.state.logo}/>
-//         <Home slogan={this.state.slogan}/>
-//         <Footer/>
-//       </>
-//     )
-//   }
-// }

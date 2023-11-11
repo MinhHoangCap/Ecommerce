@@ -7,7 +7,7 @@ export const Register = () => {
   return (
     <>
     
-    <form onSubmit={registerUser}>
+    <form className='formRegister' onSubmit={registerUser}>
         
         <div className="form__heading">Sign up</div>
             <p>Already have an account? <a href="">Sign in</a></p>

@@ -5,7 +5,7 @@ export default function NavigationBar(props) {
   return (
     <div className="NavigationBar">
         <div className="Logo">
-            <img src={props.logo} alt="Logo" />
+            <img loading='lazy' src={props.logo} alt="Logo" />
         </div>
         
         <ul className="NavigationList">
